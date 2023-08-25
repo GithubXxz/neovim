@@ -22,19 +22,19 @@ keymap.set("v", "L", "g_")
 
 -- ---------- 正常模式 ---------- ---
 -- 窗口
-keymap.set("n", "<leader>sv", "<C-w>v",opt) -- 水平新增窗口 
-keymap.set("n", "<leader>sh", "<C-w>s",opt) -- 垂直新增窗口
+keymap.set("n", "<leader>wv", "<C-w>v",opt) -- 水平新增窗口 
+keymap.set("n", "<leader>wh", "<C-w>s",opt) -- 垂直新增窗口
 keymap.set("n", "<C-j>", "<C-w>j", opt)
 keymap.set("n", "<C-k>", "<C-w>k", opt)
 keymap.set("n", "<C-h>", "<C-w>h", opt)
 keymap.set("n", "<C-l>", "<C-w>l", opt)
 
 -- 取消高亮
-keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("n", "<C-n>", ":nohl<CR>")
 
 -- 切换buffer
--- keymap.set("n", "<C-L>", ":bnext<CR>")
--- keymap.set("n", "<C-H>", ":bprevious<CR>")
+keymap.set("n", "{", ":bnext<CR>")
+keymap.set("n", "}", ":bprevious<CR>")
 
 -- 移动
 -- https://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
@@ -52,5 +52,3 @@ keymap.set("o", "H", "^")
 keymap.set("o", "L", "g_")
 
 -- ---------- 插件 ---------- ---
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
